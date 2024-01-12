@@ -20,10 +20,10 @@ struct RegisterView: View {
             VStack(spacing: 15) {
                 LoginHeaderView(task: "Sign Up")
                 
-                ReusableTextfield(placeholder: "First Name", binding: firstName)
-                ReusableTextfield(placeholder: "Lasr Name", binding: lastName)
-                ReusableTextfield(placeholder: "E-Mail Address", binding: email)
-                ReusableTextfield(placeholder: "Password", binding: password)
+                ReusableTextfield(isSecure: false, placeholder: "First Name", text : $firstName)
+                ReusableTextfield(isSecure: false, placeholder: "Lasr Name", text : $lastName)
+                ReusableTextfield(isSecure: false, placeholder: "E-Mail Address", text : $email)
+                ReusableTextfield(isSecure: true, placeholder: "Password", text : $password)
                 
                 Button {
                     //

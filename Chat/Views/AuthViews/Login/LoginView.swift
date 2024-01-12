@@ -17,8 +17,8 @@ struct LoginView: View {
             VStack(spacing: 15) {
                 LoginHeaderView(task: "Sign In")
                 
-                ReusableTextfield(placeholder: "E-Mail Address", binding: email)
-                ReusableTextfield(placeholder: "Password", binding: password)
+                ReusableTextfield(isSecure: false, placeholder: "E-Mail Address", text : $email)
+                ReusableTextfield(isSecure: true, placeholder: "Password", text : $password)
                 
                 Button {
                     //
@@ -31,6 +31,16 @@ struct LoginView: View {
                                 .foregroundColor(Color(uiColor: .systemGray6))
                         }
                 }
+                
+                HStack {
+                    Spacer()
+                    
+                    Button("Forgot Password?") {
+                        //
+                    }
+                    .foregroundColor(Color(uiColor: .systemGray2))
+                }
+                .padding(.trailing, 35)
                 
                 Spacer()
                 
