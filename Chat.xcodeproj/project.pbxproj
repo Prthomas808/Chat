@@ -14,6 +14,7 @@
 		1DE7282A2B504DEF0006FE74 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728292B504DEF0006FE74 /* LoginView.swift */; };
 		1DE7282C2B5051EE0006FE74 /* LoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7282B2B5051EE0006FE74 /* LoginHeaderView.swift */; };
 		1DE7282E2B50521C0006FE74 /* ReusableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7282D2B50521C0006FE74 /* ReusableTextfield.swift */; };
+		1DE728332B5052EC0006FE74 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728322B5052EC0006FE74 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1DE728292B504DEF0006FE74 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DE7282B2B5051EE0006FE74 /* LoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderView.swift; sourceTree = "<group>"; };
 		1DE7282D2B50521C0006FE74 /* ReusableTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTextfield.swift; sourceTree = "<group>"; };
+		1DE728322B5052EC0006FE74 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,10 @@
 		1DE728192B504D820006FE74 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				1DE7282F2B5052BA0006FE74 /* Authentication */,
 				1DE728282B504DC80006FE74 /* Supporting */,
 				1DE7281C2B504D820006FE74 /* ContentView.swift */,
 				1DE728202B504D8B0006FE74 /* Preview Content */,
-				1DE728292B504DEF0006FE74 /* LoginView.swift */,
-				1DE7282B2B5051EE0006FE74 /* LoginHeaderView.swift */,
 				1DE7282D2B50521C0006FE74 /* ReusableTextfield.swift */,
 			);
 			path = Chat;
@@ -82,6 +83,32 @@
 				1DE7281E2B504D8B0006FE74 /* Assets.xcassets */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1DE7282F2B5052BA0006FE74 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1DE728312B5052DE0006FE74 /* Register */,
+				1DE728302B5052C40006FE74 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1DE728302B5052C40006FE74 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1DE728292B504DEF0006FE74 /* LoginView.swift */,
+				1DE7282B2B5051EE0006FE74 /* LoginHeaderView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1DE728312B5052DE0006FE74 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1DE728322B5052EC0006FE74 /* RegisterView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 				1DE7282A2B504DEF0006FE74 /* LoginView.swift in Sources */,
 				1DE7282C2B5051EE0006FE74 /* LoginHeaderView.swift in Sources */,
 				1DE7281D2B504D820006FE74 /* ContentView.swift in Sources */,
+				1DE728332B5052EC0006FE74 /* RegisterView.swift in Sources */,
 				1DE7282E2B50521C0006FE74 /* ReusableTextfield.swift in Sources */,
 				1DE7281B2B504D820006FE74 /* ChatApp.swift in Sources */,
 			);

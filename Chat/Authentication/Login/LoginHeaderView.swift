@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginHeaderView: View {
+    @State var task: String
+    
     var body: some View {
         VStack {
             Image(systemName: "plus.bubble")
@@ -15,7 +17,7 @@ struct LoginHeaderView: View {
                 .frame(width: 125, height: 125)
                 .foregroundColor(.red)
             
-            Text("Sign In")
+            Text(task)
                 .font(.system(size: 18).bold())
             
             Text("Enter Your Information")
@@ -28,6 +30,6 @@ struct LoginHeaderView: View {
 
 struct LoginHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginHeaderView()
+        LoginHeaderView(task: "Sign In")
     }
 }
