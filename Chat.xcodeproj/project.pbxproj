@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7A5C9C2B5244A900658F30 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A5C9B2B5244A900658F30 /* TabViews.swift */; };
 		1DE7281B2B504D820006FE74 /* ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7281A2B504D820006FE74 /* ChatApp.swift */; };
 		1DE7281F2B504D8B0006FE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7281E2B504D8B0006FE74 /* Assets.xcassets */; };
 		1DE728222B504D8B0006FE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE728212B504D8B0006FE74 /* Preview Assets.xcassets */; };
@@ -19,9 +20,11 @@
 		1DE728412B5175D90006FE74 /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728402B5175D90006FE74 /* AccountHeaderView.swift */; };
 		1DE728432B5175F50006FE74 /* AccountCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728422B5175F50006FE74 /* AccountCellView.swift */; };
 		1DE728452B5176950006FE74 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728442B5176950006FE74 /* EditProfileView.swift */; };
+		1DE728492B519F090006FE74 /* EditProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE728482B519F090006FE74 /* EditProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D7A5C9B2B5244A900658F30 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		1DE728172B504D820006FE74 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE7281A2B504D820006FE74 /* ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatApp.swift; sourceTree = "<group>"; };
 		1DE7281E2B504D8B0006FE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		1DE728402B5175D90006FE74 /* AccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderView.swift; sourceTree = "<group>"; };
 		1DE728422B5175F50006FE74 /* AccountCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellView.swift; sourceTree = "<group>"; };
 		1DE728442B5176950006FE74 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		1DE728482B519F090006FE74 /* EditProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7A5C9A2B52449200658F30 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				1D7A5C9B2B5244A900658F30 /* TabViews.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
 		1DE7280E2B504D820006FE74 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1DE728352B5105850006FE74 /* AuthViews */,
+				1D7A5C9A2B52449200658F30 /* TabViews */,
 				1DE7283A2B5107F80006FE74 /* AccountViews */,
 				1DE728392B5107940006FE74 /* MessagesViews */,
 			);
@@ -151,6 +164,7 @@
 				1DE728402B5175D90006FE74 /* AccountHeaderView.swift */,
 				1DE728422B5175F50006FE74 /* AccountCellView.swift */,
 				1DE728442B5176950006FE74 /* EditProfileView.swift */,
+				1DE728482B519F090006FE74 /* EditProfileHeaderView.swift */,
 			);
 			path = AccountViews;
 			sourceTree = "<group>";
@@ -235,11 +249,13 @@
 			files = (
 				1DE728452B5176950006FE74 /* EditProfileView.swift in Sources */,
 				1DE7283C2B51081C0006FE74 /* MessagesView.swift in Sources */,
+				1D7A5C9C2B5244A900658F30 /* TabViews.swift in Sources */,
 				1DE7282A2B504DEF0006FE74 /* LoginView.swift in Sources */,
 				1DE728432B5175F50006FE74 /* AccountCellView.swift in Sources */,
 				1DE7282C2B5051EE0006FE74 /* LoginHeaderView.swift in Sources */,
 				1DE728412B5175D90006FE74 /* AccountHeaderView.swift in Sources */,
 				1DE728332B5052EC0006FE74 /* RegisterView.swift in Sources */,
+				1DE728492B519F090006FE74 /* EditProfileHeaderView.swift in Sources */,
 				1DE7282E2B50521C0006FE74 /* ReusableTextfield.swift in Sources */,
 				1DE7283E2B51085E0006FE74 /* AccountView.swift in Sources */,
 				1DE7281B2B504D820006FE74 /* ChatApp.swift in Sources */,

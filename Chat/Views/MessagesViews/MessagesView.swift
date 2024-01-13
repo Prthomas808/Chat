@@ -9,8 +9,6 @@ import SwiftUI
 
 struct MessagesView: View {
     
-    @State var accountViewPresented: Bool = false
-    
     var body: some View {
         NavigationStack {
             VStack {
@@ -18,18 +16,6 @@ struct MessagesView: View {
             }
             .navigationTitle("Messages")
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        accountViewPresented.toggle()
-                    } label: {
-                        Image(systemName: "person.circle")
-                    }
-                    .sheet(isPresented: $accountViewPresented) {
-                        AccountView()
-                    }
-
-                }
-                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         //
@@ -49,14 +35,4 @@ struct MessagesView_Previews: PreviewProvider {
     }
 }
 
-//struct ToolbarItemsView: View {
-//    
-//    @State var accountViewPresented: Bool = false
-//    
-//    var body: some View {
-//        
-//        ToolbarItem(placement: .navigationBarLeading) {
-//            <#code#>
-//        }
-//    }
-//}
+
